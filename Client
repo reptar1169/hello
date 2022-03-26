@@ -1,0 +1,27 @@
+#include <iostream>
+
+using std::string;
+
+class Client {
+public:
+    string Name;
+    string Property;
+    
+    void IntroduceClient() {
+        std::cout << "Name - " << Name << std::endl;
+        std::cout << "Property - " << Property << std::endl;
+    }
+    Client(string name, string property) {
+        Name = name;
+        Property = property;
+    }
+};
+
+int main()
+{
+    Client client1 = Client("Jeff", "Comly Ct");
+    client1.IntroduceClient();
+    Client client2 = Client("Pam", "Harbour Village");
+    client1.IntroduceClient();
+
+}
